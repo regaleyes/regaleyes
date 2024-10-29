@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.moyasar.com/mpf/1.14.0/moyasar.css" />
+
+
+
+    <title>Regaleyes | ريجل ايز</title>
+    <script type="module" crossorigin src="/assets/index-8e6a6e61.js"></script>
+    <link rel="stylesheet" href="/assets/index-07599a0c.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Get the html element
+      const htmlElement = document.documentElement;
+
+      // Function to update the dir attribute
+      function updateDir(lang) {
+        if (lang === 'ar') {
+          htmlElement.dir = 'rtl';
+        } else {
+          htmlElement.dir = 'ltr';
+        }
+      }
+
+      // Call the function when the language changes
+      // You can call this function from your language switcher component
+      updateDir('en'); // Initialize with English language
+
+      // Example of how to call the function when the language changes
+      // You can replace this with your own language switcher logic
+      document.addEventListener('languageChange', (event) => {
+        updateDir(event.detail.lang);
+      });
+    </script>
+    
+    
+ <script src="https://checkout.tabby.ai/tabby-promo.js"></script>
+ <script src="https://checkout.tabby.ai/tabby-card.js"></script>
+ <!-- Moyasar Scripts -->
+ <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js"></script>
+
+  <script src="https://cdn.moyasar.com/mpf/1.7.3/moyasar.js"></script>
+
+  </body>
+</html>
